@@ -1,0 +1,127 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #2c2c2c, #535353);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Контейнер для центрування */
+.container {
+  text-align: center;
+}
+
+/* Заголовок */
+.login-title {
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Блок форми */
+.login-box {
+  width: 320px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Поля вводу */
+.input-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-box label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+/* Ефект для лейблів при фокусі або валідності */
+.input-box input:focus + label,
+.input-box input:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #ffcc00;
+}
+
+/* Кнопка */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffdb49;
+}
+
+/* Бульбашки на фоні */
+.bubbles-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  border-radius: 50%;
+  opacity: 0.25;
+  background: radial-gradient(circle at 30% 30%, #fff 60%, transparent 100%);
+  animation: bubble-move 12s linear infinite;
+}
+
+@keyframes bubble-move {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.25;
+  }
+  80% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.1);
+    opacity: 0;
+  }
+}
