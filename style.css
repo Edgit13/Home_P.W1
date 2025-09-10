@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #2c2c2c, #535353);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: 100vh;
+}
+
+.Login {
+    display: flex;
+    background-color: #000000;
+    border: none;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    text-decoration: none;
+    color: #afafaf;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: 1.0s ease-out;
+}
+.Login:hover {
+    border-bottom: 7px solid #8a0000;
+}
+
+.SignUp {
+    display: flex;
+    background-color: #000000;
+    border: none;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    text-decoration: none;
+    color: #afafaf;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.SignUp:hover {
+    border-bottom: 7px solid #8a0000;
+}
+.bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+.bar {
+    justify-content: center;
+    align-items: center;
+    background: #535353;
+    height: 100%;
+    width: 50px;
+}
